@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0F0F14;
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/* barra scorrimento  */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F0F14;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* debug */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* btn  */
+.desktopMenuBtn {
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 13px 10px;
+    border-radius: 2rem;
+}
+
+.desktopMenuBtn:hover {
+    background-color: rgb(214, 178, 16);
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateZ(5px) scale(1.1);
+}
+
+.submitBtn {
+    background: white;
+    border: none;
+    padding: 0.75rem 3.5rem;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: rgb(214, 178, 16);
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateZ(5px) scale(1.1);
+}
+
+/* font  */
+.fontBold {
+    font-weight: bold;
+}
+
+.pageTitle {
+    font-size: 3rem;
+}
+
+.pageDesc {
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+/* media query */
+@media screen and (max-width: 500px) {
+    .pageDesc {
+        font-size: 1.5rem;
+    }
+}

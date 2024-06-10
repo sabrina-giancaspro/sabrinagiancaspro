@@ -1,0 +1,109 @@
+/* projects.css */
+
+#projects {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.projectsTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.project {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    opacity: 0;
+    /* Impostato per l'animazione */
+}
+
+.projectFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.projectImg {
+    width: 35rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2rem;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.projectImg:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .projectImg {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    .projectFlex {
+        flex-direction: column;
+    }
+}
+
+.submitBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: #0056b3;
+}
+
+.tech {
+    margin-bottom: 10px;
+}
+
+
+.projectImgContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+.projectImgOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.projectImgContainer:hover .projectImgOverlay {
+    opacity: 1;
+}
+
+.playIcon {
+    color: white;
+    font-size: 50px;
+}
+
+.contactDesc{
+    margin-bottom: 20px;
+}

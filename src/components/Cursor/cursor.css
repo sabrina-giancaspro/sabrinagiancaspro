@@ -1,0 +1,11 @@
+/* Stili per il cursore personalizzato */
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 253, 253, 0.309);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+}

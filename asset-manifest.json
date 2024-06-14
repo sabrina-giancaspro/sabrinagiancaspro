@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sabrinagiancaspro/static/css/main.16be9e9b.css",
-    "main.js": "/sabrinagiancaspro/static/js/main.432ab1a5.js",
+    "main.css": "/sabrinagiancaspro/static/css/main.8cf22d05.css",
+    "main.js": "/sabrinagiancaspro/static/js/main.be4bb93d.js",
     "static/media/cani.png": "/sabrinagiancaspro/static/media/cani.8a41fc2be8be4a0862a9.png",
     "static/media/website.png": "/sabrinagiancaspro/static/media/website.3d3febce7e4ae6b3368e.png",
     "static/media/spotify.png": "/sabrinagiancaspro/static/media/spotify.f00b5719c94dda31b2af.png",
@@ -9,11 +9,11 @@
     "static/media/firstimg.png": "/sabrinagiancaspro/static/media/firstimg.b9bf508849954501abc3.png",
     "static/media/logo.png": "/sabrinagiancaspro/static/media/logo.db65b50528779e747253.png",
     "index.html": "/sabrinagiancaspro/index.html",
-    "main.16be9e9b.css.map": "/sabrinagiancaspro/static/css/main.16be9e9b.css.map",
-    "main.432ab1a5.js.map": "/sabrinagiancaspro/static/js/main.432ab1a5.js.map"
+    "main.8cf22d05.css.map": "/sabrinagiancaspro/static/css/main.8cf22d05.css.map",
+    "main.be4bb93d.js.map": "/sabrinagiancaspro/static/js/main.be4bb93d.js.map"
   },
   "entrypoints": [
-    "static/css/main.16be9e9b.css",
-    "static/js/main.432ab1a5.js"
+    "static/css/main.8cf22d05.css",
+    "static/js/main.be4bb93d.js"
   ]
 }

@@ -1,9 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './cursor.css';
 import gsap from 'gsap';
 
 const Cursor = () => {
+    const [isVisible, setIsVisible] = useState(true); // Stato per gestire la visibilità del cursore
     const cursorRef = useRef(null);
+
     useEffect(() => {
         const cursor = cursorRef.current;
 
@@ -42,11 +44,25 @@ const Cursor = () => {
         };
     }, []);
 
-    return (
+    // Aggiornamento dello stato della visibilità in base alla larghezza dello schermo
+    useEffect(() => {
+        const handleResize = () => {
+            setIsVisible(window.innerWidth > 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Controlla la larghezza dello schermo al caricamento della pagina
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    return isVisible ? (
         <section id='cursor'>
             <div ref={cursorRef} className='custom-cursor'></div>
         </section>
-    )
+    ) : null;
 }
 
 export default Cursor;

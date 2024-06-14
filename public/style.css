@@ -12,6 +12,7 @@ body {
     color: white;
     overflow: hidden;
     overflow-y: scroll;
+    cursor: none;
 }
 
 /* barra scorrimento  */

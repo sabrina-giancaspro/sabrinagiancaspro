@@ -1,11 +1,20 @@
-/* Stili per il cursore personalizzato */
 .custom-cursor {
     position: fixed;
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 253, 253, 0.309);
+    background-color: rgba(255, 253, 253, 0.069);
     border-radius: 50%;
+    border: 1px solid white;
     pointer-events: none;
     z-index: 1000;
     transform: translate(-50%, -50%);
+
+    /* Nascondi il cursore in modalità mobile */
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .custom-cursor {
+        display: block;
+    }
 }
